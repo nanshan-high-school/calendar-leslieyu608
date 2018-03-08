@@ -58,7 +58,6 @@ int main()
 	}
 	
 	year--;
-	cout << year << endl;
 	int day, w, century = year/100;
 	year = year%100;
 	w = year+(year/4)+(century/4)-(century*2)+36;

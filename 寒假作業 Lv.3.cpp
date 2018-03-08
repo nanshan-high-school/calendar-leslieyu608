@@ -14,13 +14,13 @@ void spaces(char x) {
 
 int main()
 {
-	int year = 1582, month[12] = {31,28,31,30,31,30,31,31,30,31,30,31}, monthNo = 0;
+	int year = -46, month[12] = {31,28,31,30,31,30,31,31,30,31,30,31}, monthNo = 0;
 	
-	while (year < 1583) {
+	while (year < -45) {
 		cout << "請輸入西元幾年:";
 		cin >> year;
 		
-		if (year < 1583) {
+		if (year < -45) {
 			cout << "回去讀歷史!" << endl;
 		} else if (year%400 == 0) {
 			month[1] = 29;
